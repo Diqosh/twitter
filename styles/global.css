@@ -1,9 +1,9 @@
-@import "layout.css";
-@import "menu_icons.css";
-@import "svg_logo.css";
-@import "trends-for-you.css";
-@import "tweet.css";
-@import "who-to-follow.css";
+@import "asmans/layout.css";
+@import "asmans/menu_icons.css";
+@import "asmans/svg_logo.css";
+@import "asmans/trends-for-you.css";
+@import "asmans/tweet.css";
+@import "asmans/who-to-follow.css";
 
 html{
     font-family: system-ui, -apple-system, 
