@@ -1,8 +1,6 @@
+@import url('left-sidebar.css');
+@import url('right-sidebar.css');
 * {
     padding: 0;
     margin: 0;
-}
-.logo {
-    width: 24px;
-    color: rgb(29, 155, 240) !important;
 }
