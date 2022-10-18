@@ -1,0 +1,39 @@
+.left {
+    position: relative;
+}
+.left .logo {
+    color: rgb(29, 155, 240);
+    margin-bottom: 20px;
+}
+.left .logo i {
+    font-size: 35px;
+}
+.left i {
+    font-size: 25px;
+    width: 30px;
+}
+.left ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    width: 200px;
+}
+.left ul li:first-child a {
+    font-weight: bold;
+}
+.left ul li {
+    margin-bottom: 10px;
+}
+.left button {
+    margin-top: 20px;
+    font-size: 20px;
+    background: rgb(29, 155, 240);
+    height: 52px;
+    width: 225px;
+    border: none;
+    color: white;
+    border-radius: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
