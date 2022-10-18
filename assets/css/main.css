@@ -1,10 +1,12 @@
 @import "rightsidebar.css";
-@import url('left-sidebar.css');
+@import "left-sidebar.css";
 @import "home.css";
+@import "tweet.css";
 :root{
     ---gray: #15202B;
     ---white: #fefefe;
     ---logo: #fefefe;
+    ---blue: rgb(29, 155, 240);
 }
 * {
     padding: 0;
