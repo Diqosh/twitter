@@ -1,27 +1,38 @@
 @import "rightsidebar.css";
-@import url('left-sidebar.css');
+@import "left-sidebar.css";
 @import "home.css";
+@import "tweet.css";
+@import "explore.css";
+@import "profile.css";
+
+
 :root{
     ---gray: #15202B;
     ---white: #fefefe;
     ---logo: #fefefe;
+    ---blue: rgb(29, 155, 240);
 }
+
 * {
     padding: 0;
     margin: 0;
     color: var(---white);
 }
+
 body {
     background: var(---gray);
 }
+
 .sim {
     display: flex;
     justify-content: space-between;
 }
+
 .sim .leftbar{
     width: 300px;
     padding: 20px;
 }
+
 .sim .rightbar{
     padding: 20px;
 }

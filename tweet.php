@@ -9,7 +9,7 @@
     </section>
     <section class="main">
         <?php
-            include 'pages/profile.php';
+            include 'pages/tweet_page.php';
         ?>
     </section>
     <section class="rightbar">

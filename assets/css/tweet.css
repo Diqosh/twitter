@@ -1,0 +1,89 @@
+.tweet {
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+    width: 500px;
+}
+.tweet .close {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tweet .close:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+.tweet .close i {
+    font-size: 25px;
+    line-height: 40px;
+}
+.tweet .info {
+    display: flex;
+    flex-direction: row;
+}
+.tweet .info .data {
+    display: flex;
+    flex-direction: column;
+}
+.tweet .info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+.tweet .info .data select {
+    width: 100px;
+    padding: 2px 5px;
+    border: 1px solid var(---blue);
+    color: var(---blue);
+    background: transparent;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    height: 24px;
+}
+.tweet .info .data textarea {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    width: 400px;
+}
+.tweet .info a {
+    text-decoration: none;
+    color: var(---blue);
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 12px;
+}
+.tweet .info a i {
+    color: var(---blue);
+}
+.tweet .info .attach {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tweet .info .attach button {
+    margin-top: 20px;
+    font-size: 15px;
+    background: rgb(29, 155, 240);
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.tweet .info .attach .icons i {
+    color: var(---blue);
+}
+.tweet .info hr {
+    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.1);
+}
