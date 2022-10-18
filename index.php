@@ -9,7 +9,7 @@
     </section>
     <section class="main">
         <?php
-            include 'pages/home.php';
+            include 'pages/profile.php';
         ?>
     </section>
     <section class="rightbar">

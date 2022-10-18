@@ -1,0 +1,39 @@
+.explore{
+    min-width: 500px;
+}
+
+.sport, .sport__item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.sport-item__header, .team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team__country{
+    display: flex;
+}
+
+.team{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.team__rating{
+    text-align: right;
+}
+
+.country_flag{
+    width: 50px;
+    height: 27px;
+    background-color: #fff;
+    margin-right: 10px;
+}
