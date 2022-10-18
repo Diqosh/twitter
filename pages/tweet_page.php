@@ -1,5 +1,5 @@
 <div class="tweet">
-    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+    <div class="close" onclick="window.location.href='http://localhost:8888/twitter/'"><i class="fa-solid fa-xmark"></i></div>
     <div class="info">
         <img src="assets/images/Artboard_Copy_3_2.png" alt="">
         <div class="data">

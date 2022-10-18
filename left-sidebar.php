@@ -3,11 +3,12 @@
     <i class="fa-brands fa-twitter"></i>
     </div>
     <ul>
-        <li><a href=""><i class="fa-solid fa-house-chimney"></i> Home</a></li>
-        <li><a href=""><i class="fa-sharp fa-solid fa-hashtag"></i> Explore</a></li>
-        <li><a href=""><i class="fa-regular fa-bell"></i> Notifications</a></li>
+        <li><a href="home.php"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li><a href="explore.php"><i class="fa-sharp fa-solid fa-hashtag"></i> Explore</a></li>
+        <li><a href="notification.php"><i class="fa-regular fa-bell"></i> Notifications</a></li>
+        <li><a href="profile.php"><i class="fa-regular fa-bell"></i> Profile</a></li>
     </ul>
-    <button>Tweet</button>
+    <button onclick="window.location.href='http://localhost:8888/twitter/tweet.php'">Tweet</button>
     <div class="profile_button">
         <img src="assets/images/Artboard_Copy_3_2.png" alt="">
         <div class="name">

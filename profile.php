@@ -1,20 +1,20 @@
 <?php
-    include 'header.php';
+include 'header.php';
 ?>
 <div class="sim">
     <section class="leftbar">
         <?php
-            include 'left-sidebar.php';
+        include 'left-sidebar.php';
         ?>
     </section>
     <section class="main">
         <?php
-            include 'pages/home_page.php';
+        include 'pages/profile_page.php';
         ?>
     </section>
     <section class="rightbar">
         <?php
-            include 'right-sidebar.php';
+        include 'right-sidebar.php';
         ?>
     </section>
 </div>

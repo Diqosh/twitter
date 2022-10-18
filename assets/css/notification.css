@@ -1,0 +1,118 @@
+.tweet {
+    display: flex;
+    border-bottom: #f0e8e6;
+    margin-bottom: 2px;
+    padding: 10px 15px;
+}
+
+.tweet:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+}
+
+.tweet__author-logo {
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet__header {
+    display: flex;
+}
+
+.tweet a {
+    color: #1b94e0;
+    text-decoration: none;
+}
+
+.tweet a:hover {
+    /* color: #1b94e0; */
+    text-decoration: underline;
+}
+
+.tweet__author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+}
+
+.tweet_publish-slug {
+    color: #5b7083;
+    font-size: 15px;
+}
+
+.tweet_publish-time {
+    color: #657786;
+    margin-left: 5px;
+
+}
+
+.tweet__image {
+    width: 100%;
+    border-radius: 15px;
+    border-top: 10px;
+}
+.profile__content {
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px
+}
+
+
+
+.notifications {
+    display: block;
+    border-bottom: #f0e8e6;
+    margin-bottom: 2px;
+    padding: 10px 15px;
+    flex-direction: row;
+}
+
+.notifications:hover {
+    /* background: rgba(0, 0, 0, 0.03); */
+    cursor: pointer;
+}
+
+.notif_main_text {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(15, 20, 25);
+    margin-right: 5px;
+}
+
+.sub_notif_block {
+    display: flex;
+    block-size: 56px;
+    /* padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px; */
+    /* background: rgba(0, 0, 0, 0.03); */
+    text-align: center;
+    /* margin-left: 140px; */
+}
+
+.sub_notif {
+    /* display: flex; */
+    width: 300px;
+    /* block-size: 150px; */
+    /* writing-mode: horizontal-tb; */
+    /* padding-left: 0px; */
+    /* padding-right: 0px; */
+    font-size: 15px;
+    padding: 23px 0 23px;
+    /* background: rgba(0, 0, 0, 0.03); */
+    text-align: center;
+    /* margin-left: 140px; */
+}
+
+.sub_notif:hover {
+    background: rgb(231 231 232);
+    /* cursor: pointer;  */
+}
+.notif__all {
+    margin-top: 10px;
+}
