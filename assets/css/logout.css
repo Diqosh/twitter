@@ -1,0 +1,10 @@
+.form h6{
+    color: rgb(46, 46, 46, .6);
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.form button.cancel {
+    background: transparent;
+    border: 1px solid var(---blue);
+    color: var(---blue);
+}

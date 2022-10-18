@@ -6,7 +6,8 @@
 @import "profile.css";
 @import "notification.css";
 @import "register.css";
-
+@import "forget_password.css";
+@import "logout.css";
 
 :root{
     ---gray: #15202B;
