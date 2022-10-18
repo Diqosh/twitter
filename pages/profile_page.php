@@ -7,7 +7,7 @@
     </div>
     <div class="profile__foot">
         <div class="edit__btn">
-            <button>Edit profile</button>
+            <button><a  rel="modal:close">Edit profile</a></button>
         </div>
         <p class="profile__name">Dinmukhammed Tleuzhanuly</p>
         <p class="profile__nickname">@Diqosh</p>
@@ -18,4 +18,9 @@
         </div>
     </div>
 </div>
+
+<div rel="modal:open" >
+    <p>Thanks for clicking. That felt good.</p>
+</div>
+
 
