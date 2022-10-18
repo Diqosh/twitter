@@ -1,5 +1,6 @@
 @import "rightsidebar.css";
 @import url('left-sidebar.css');
+@import "home.css";
 :root{
     ---gray: rgb(32, 35, 39);
     ---white: #fefefe;
