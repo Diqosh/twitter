@@ -9,8 +9,11 @@
     </ul>
     <button>Tweet</button>
     <div class="profile_button">
-        <img src="assets/" alt="">
-        <div class="name"></div>
-        <i></i>
+        <img src="assets/images/Artboard_Copy_3_2.png" alt="">
+        <div class="name">
+            <h3>User Name</h3>
+            <p>@username</p>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
     </div>
 </div>

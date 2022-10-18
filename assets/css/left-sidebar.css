@@ -1,8 +1,9 @@
 .left {
     position: relative;
+    height: 100vh;
 }
 .left .logo {
-    color: rgb(29, 155, 240);
+    color: var(---logo);
     margin-bottom: 20px;
 }
 .left .logo i {
@@ -12,18 +13,24 @@
     font-size: 25px;
     width: 30px;
 }
+.left ul li {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 15px;
+}
 .left ul li a {
     font-size: 20px;
     text-decoration: none;
     font-family: sans-serif;
-    color: black;
-    width: 200px;
+    color: var(---white);
+}
+.left ul li:hover {
+    background: gray;
 }
 .left ul li:first-child a {
     font-weight: bold;
-}
-.left ul li {
-    margin-bottom: 10px;
 }
 .left button {
     margin-top: 20px;
@@ -36,4 +43,19 @@
     border-radius: 26px;
     font-weight: bold;
     cursor: pointer;
+}
+.left .profile_button {
+    position: absolute;
+    bottom: 10px; 
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(---white);
+    font-family: sans-serif;
+}
+
+.left .profile_button img {
+    width: 40px;
+    border-radius: 20px;
 }

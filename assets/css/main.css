@@ -1,9 +1,14 @@
 @import "rightsidebar.css";
+@import url('left-sidebar.css');
 :root{
     ---gray: rgb(32, 35, 39);
+    ---white: #fefefe;
+    ---logo: #fefefe;
 }
-@import url('left-sidebar.css');
 * {
     padding: 0;
     margin: 0;
+}
+body {
+    background: var(---gray);
 }
