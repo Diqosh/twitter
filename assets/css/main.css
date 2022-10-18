@@ -6,8 +6,11 @@
 @import "profile.css";
 @import "notification.css";
 @import "register.css";
+
 @import "forget_password.css";
 @import "logout.css";
+@import "profile_edit_modal.css";
+@import "message.css";
 
 :root{
     ---gray: #15202B;

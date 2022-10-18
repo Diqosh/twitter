@@ -7,7 +7,7 @@
     </div>
     <div class="profile__foot">
         <div class="edit__btn">
-            <button><a  rel="modal:close">Edit profile</a></button>
+            <button><a href="#ex1"  rel="modal:open" onclick="console.log('asf')">Edit profile</a></button>
         </div>
         <p class="profile__name">Dinmukhammed Tleuzhanuly</p>
         <p class="profile__nickname">@Diqosh</p>
@@ -19,8 +19,15 @@
     </div>
 </div>
 
-<div rel="modal:open" >
+<div id="ex1" class="modal">
+    <i class="fa-solid fa-image"></i>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <p>Birth date · Edit</p>
+    <p>August 6, 2002</p>
     <p>Thanks for clicking. That felt good.</p>
+    <a href="#" rel="modal:close">Close</a>
 </div>
-
 
