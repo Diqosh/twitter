@@ -1,5 +1,8 @@
+@import "rightsidebar.css";
+:root{
+    ---gray: rgb(32, 35, 39);
+}
 @import url('left-sidebar.css');
-@import url('right-sidebar.css');
 * {
     padding: 0;
     margin: 0;
