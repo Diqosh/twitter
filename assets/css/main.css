@@ -25,7 +25,7 @@
 }
 
 body {
-    background: var(---gray);
+    background: var(---gray)!important;
 }
 
 .sim {
