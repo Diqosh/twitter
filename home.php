@@ -2,6 +2,8 @@
 include 'header.php';
 ?>
 <div class="sim">
+    <?php echo $_SERVER['DOCUMENT_ROOT']?>
+
     <section class="leftbar">
         <?php
         include 'left-sidebar.php';
