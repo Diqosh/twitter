@@ -7,7 +7,6 @@ if (validate($_POST['login'], $_POST['password'], $_POST['bio'])) {
     $password = $_POST['password'];
     $bio = $_POST['bio'];
 
-
     $prep = mysqli_prepare($connect, "select id from users where login=?");
     mysqli_stmt_bind_param($prep, "s", $login);
     mysqli_stmt_execute($prep);
@@ -22,7 +21,12 @@ if (validate($_POST['login'], $_POST['password'], $_POST['bio'])) {
     mysqli_stmt_bind_param($prep1, "sss",  $login,$hash, $bio);
     mysqli_stmt_execute($prep1);
 
-    header("Location: ".BASE_URL.'/pages/login.php');
+    $row = mysqli_fetch_assoc($query);
+
+    $_SESSION["user_id"] = $row["id"];
+    $_SESSION["login"] = $row["login"];
+
+    header("Location: ".BASE_URL."/index.php");
 
 }else{
     header("Location: ".BASE_URL.'/index.php?error=1');

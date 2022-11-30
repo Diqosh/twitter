@@ -1,3 +1,4 @@
+<?php     session_start(); ?>
 <div class="left">
     <div class="logo">
     <i class="fa-brands fa-twitter"></i>
@@ -13,7 +14,11 @@
     <div class="profile_button">
         <img src="assets/images/Artboard_Copy_3_2.png" alt="">
         <div class="name">
-            <h3>User Name</h3>
+            <h3><?php if(isset($_SESSION['user_id'])){
+                echo $_SESSION['login'];
+                }else{
+                    echo 'no user';
+                }?></h3>
             <p>@username</p>
         </div>
         <i class="fa-solid fa-ellipsis"></i>
