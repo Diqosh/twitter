@@ -1,3 +1,7 @@
+
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

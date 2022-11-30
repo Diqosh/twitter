@@ -22,24 +22,19 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="<?=BASE_URL?>/api/auth/signup.php" class="register__form" method="post">
+
+                <form onsubmit="return false;" action="http://localhost/twitter/api/user/signup.php" method="post">
                     <div class="input-group mb-3">
-                        <input name="login" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        <input name="login" type="text" class="form-control" placeholder="login">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        <input name="password" type="text" class="form-control" placeholder="password">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        <input name="bio" type="text" class="form-control" placeholder="bio">
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
+                    <button class="btn btn-primary" type="submit" onclick="">Save changes</button>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
