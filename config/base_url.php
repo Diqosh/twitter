@@ -1,2 +1,2 @@
 <?php
-const BASE_URL = "http://localhost/twitter";
+const BASE_URL = "http://localhost:8888/twitter";

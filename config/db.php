@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $user = 'root';
-$password = '';
-$dbname = 'EpicGames';
+$password = 'root';
+$dbname = 'twitter';
 
 $connect = mysqli_connect($host, $user, $password, $dbname);
 if (mysqli_connect_errno())

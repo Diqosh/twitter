@@ -1,15 +1,15 @@
 <?php
-include "../../config/all.php";
-if (validate($_POST['name'], $_POST['second-name'], $_POST['nickname'], $_POST['email'], $_POST['password'], $_POST['country'])) {
+require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
 
-    $name =$_POST['name'];
-    $nickname = $_POST['nickname'];
-    $email = $_POST['email'];
+if (validate($_POST['login'], $_POST['password'], $_POST['bio'])) {
+
+    $login =$_POST['login'];
     $password = $_POST['password'];
-    $country = $_POST['country'];
+    $bio = $_POST['bio'];
 
-    $prep = mysqli_prepare($connect, "select id from users where email=? or nickname=?");
-    mysqli_stmt_bind_param($prep, "ss", $email, $nickname);
+
+    $prep = mysqli_prepare($connect, "select id from users where login=?");
+    mysqli_stmt_bind_param($prep, "s", $login);
     mysqli_stmt_execute($prep);
     $query = mysqli_stmt_get_result($prep);
 
@@ -18,11 +18,9 @@ if (validate($_POST['name'], $_POST['second-name'], $_POST['nickname'], $_POST['
         exit();
     }
     $hash = sha1($password);
-    $prep1 = mysqli_prepare($connect, "insert into users(name,nickname, email,password, second_name, country) values (?, ? , ?, ?, ?, ?)");
-    mysqli_stmt_bind_param($prep1, "ssssss", $name,$nickname, $email, $hash, $second_name, $country);
+    $prep1 = mysqli_prepare($connect, "insert into users(login, password, bio) values (?, ? , ?)");
+    mysqli_stmt_bind_param($prep1, "sss",  $login,$hash, $bio);
     mysqli_stmt_execute($prep1);
-
-
 
     header("Location: ".BASE_URL.'/pages/login.php');
 
