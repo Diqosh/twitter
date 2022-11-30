@@ -55,7 +55,6 @@
             <h4><?php echo $row['login'];?>:</h4>
             <p style="margin-left: 20px;"><?php echo $row['message'];?></p>
             <hr>
-
         </div>
     </div>
 </div>

@@ -20,6 +20,6 @@
                 }?></h3>
             <p>@username</p>
         </div>
-        <i class="fa-solid fa-ellipsis"></i>
+        <a class="btn" href="<?=BASE_URL?>/api/auth/signout.php">logout</a>
     </div>
 </div>

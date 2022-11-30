@@ -21,6 +21,9 @@ if (validate($_POST['login'], $_POST['password'], $_POST['bio'])) {
     mysqli_stmt_bind_param($prep1, "sss",  $login,$hash, $bio);
     mysqli_stmt_execute($prep1);
 
+    session_start();
+
+
     $row = mysqli_fetch_assoc($query);
 
     $prep = mysqli_prepare($connect, "select * from users where login=? and password=?");

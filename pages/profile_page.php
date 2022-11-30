@@ -17,17 +17,4 @@
             <p>0 Followers</p>
         </div>
     </div>
-</div>
-
-<div id="ex1" class="modal">
-    <i class="fa-solid fa-image"></i>
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <input type="text">
-    <p>Birth date · Edit</p>
-    <p>August 6, 2002</p>
-    <p>Thanks for clicking. That felt good.</p>
-    <a href="#" rel="modal:close">Close</a>
-</div>
-
+</div>]
