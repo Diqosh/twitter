@@ -1,6 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
-if (validate($_POST['name'], $_POST['password'], $_POST['password'])) {
+
+if (validate($_POST['login'], $_POST['password'], $_POST['bio'])) {
 
     $login =$_POST['login'];
     $password = $_POST['password'];
@@ -18,7 +19,7 @@ if (validate($_POST['name'], $_POST['password'], $_POST['password'])) {
     }
     $hash = sha1($password);
     $prep1 = mysqli_prepare($connect, "insert into users(login, password, bio) values (?, ? , ?)");
-    mysqli_stmt_bind_param($prep1, "ssssss",  $login,$hash, $bio);
+    mysqli_stmt_bind_param($prep1, "sss",  $login,$hash, $bio);
     mysqli_stmt_execute($prep1);
 
     header("Location: ".BASE_URL.'/pages/login.php');

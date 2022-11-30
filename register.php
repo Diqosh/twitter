@@ -11,7 +11,7 @@
         <button>Sign up with phone or email</button>
         <p>By signing up, you agree to the <a href="#">Terms of Service</a>  and <a href="#">Privacy Policy</a>, including <a href="#">Cookie Use</a>.</p>
         <h5>Already have an account?</h5>
-        <button  type="button" class="btn btn-primary signin" data-bs-toggle="modal" data-bs-target="#exampleModal" class="">Sign in</button>
+        <button  type="button" class="btn btn-primary signin" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
     </div>
 </div>
 <div class="modal fade mymodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -22,8 +22,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-
-                <form onsubmit="return false;" action="http://localhost/twitter/api/user/signup.php" method="post">
+                <form action="<?BASE_URL?>/api/auth/signup.php" method="post">
                     <div class="input-group mb-3">
                         <input name="login" type="text" class="form-control" placeholder="login">
                     </div>
