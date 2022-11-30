@@ -26,15 +26,12 @@
         </div>
     </form>
 </div>
-<?php
+<?php   
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
     if (isset($_POST['text'])) {
-        $conn = mysqli_connect('localhost', 'root', '', 'twitter');
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
         $text = $_POST['text'];
         $sql = "insert into posts(text) values('$text')";
-        $db  = mysqli_query($conn,$sql);
+        $db  = mysqli_query($connect,$sql);
         header('Location: index.php');
     }
 ?>

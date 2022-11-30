@@ -4,14 +4,11 @@
             <h3>Search results:</h3>
         </div>
 <?php
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
     if (isset($_POST['pattern'])) {
-        $conn = mysqli_connect('localhost', 'root', '', 'twitter');
-        if (!$conn) {
-            die("Connection failed: " . mysqli_connect_error());
-        }
         $pattern = '%'.$_POST['pattern'].'%';
         $sql = "select id, login from users where login like '$pattern';";
-        $result  = mysqli_query($conn,$sql);
+        $result  = mysqli_query($connect,$sql);
         // echo var_dump($result);
         if (mysqli_num_rows($result)) {
             while ($row = mysqli_fetch_array($result)) {

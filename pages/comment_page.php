@@ -1,16 +1,13 @@
 <?php
     $post_id = $_GET['post'];
-    $conn = mysqli_connect('localhost', 'root', '', 'twitter');
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
     if (isset($_POST['comment'])) {
         $message = $_POST['comment'];
         $sql = "insert into comments(message, post_id, user_id) values('$message', '$post_id', '1')";
-        $db  = mysqli_query($conn,$sql);
+        $db  = mysqli_query($connect,$sql);
     }
     $sql = "select * from posts where id='$post_id'";
-    $db  = mysqli_query($conn,$sql);
+    $db  = mysqli_query($connect,$sql);
     $res = mysqli_fetch_assoc($db);
     if ($res == NULL) {
         echo "<h1>Post doesn't exist</h1>";
@@ -48,7 +45,7 @@
 </div>
 <?php
     $sql = "select c.message, u.login from comments as c join users as u on u.id = c.user_id and c.post_id = '$post_id';";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($connect, $sql);
     while ($row = mysqli_fetch_array($result)) {
 ?>
     <div class="tweet">
