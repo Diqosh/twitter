@@ -17,7 +17,9 @@ if(validate($_POST["login"], $_POST["password"])){
         exit();
     }
     $row = mysqli_fetch_assoc($query);
+
     session_start();
+
     $_SESSION["user_id"] = $row["id"];
     $_SESSION["login"] = $row["login"];
 

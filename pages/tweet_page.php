@@ -30,7 +30,8 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
     if (isset($_POST['text'])) {
         $text = $_POST['text'];
-        $sql = "insert into posts(text) values('$text')";
+        $cur_user = $_SESSION['user_id'];
+        $sql = "insert into posts(text, user_id) values('$text', '$cur_user')";
         $db  = mysqli_query($connect,$sql);
         header('Location: index.php');
     }
