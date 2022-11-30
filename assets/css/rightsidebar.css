@@ -75,3 +75,19 @@ textarea:focus, input:focus{
     border-radius: 20px;
 }
 
+.attach button {
+    margin-top: 20px;
+    font-size: 15px;
+    background: rgb(29, 155, 240);
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.search form{
+    display: flex;
+
+}

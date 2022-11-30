@@ -2,7 +2,13 @@
     <div class="right-sidebar__search">
         <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search Twitter">
+            <form action="search.php" method="post">
+                <input name="pattern" type="text" placeholder="Search Twitter">
+                <div class="attach">
+                    <button>Search</button>
+                </div>
+            </form>
+            
         </div>
     </div>
     <div class="sidebar__trends">
