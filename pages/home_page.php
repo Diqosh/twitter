@@ -5,7 +5,8 @@
         </div>
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
-    $sql = "select p.id, login, likes, text, dislikes, views from posts as p join users as u on u.id = p.user_id;";
+    $cur_user = $_SESSION['user_id'];
+    $sql = "select p.id, login, likes, text, dislikes, views from posts as p join friends as f join users as u on f.user2_id = p.user_id and f.user2_id = u.id and f.user1_id = '$cur_user';";
     $result = mysqli_query($connect, $sql);
     while ($row = mysqli_fetch_array($result)) {
 ?>

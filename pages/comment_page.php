@@ -3,7 +3,8 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . "/twitter/config/all.php";
     if (isset($_POST['comment'])) {
         $message = $_POST['comment'];
-        $sql = "insert into comments(message, post_id, user_id) values('$message', '$post_id', '1')";
+        $cur_user = $_SESSION['user_id'];
+        $sql = "insert into comments(message, post_id, user_id) values('$message', '$post_id', '$cur_user')";
         $db  = mysqli_query($connect,$sql);
     }
     $sql = "select * from posts where id='$post_id'";

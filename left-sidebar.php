@@ -1,4 +1,3 @@
-<?php     session_start(); ?>
 <div class="left">
     <div class="logo">
     <i class="fa-brands fa-twitter"></i>
@@ -10,7 +9,7 @@
         <li><a href="message.php"><i class="fa-regular fa-bell"></i>Message</a></li>
         <li><a href="profile.php"><i class="fa-regular fa-bell"></i> Profile</a></li>
     </ul>
-    <button onclick="window.location.href='http://localhost:8888/twitter/tweet.php'">Tweet</button>
+    <button onclick="window.location.href='tweet.php'">Tweet</button>
     <div class="profile_button">
         <img src="assets/images/Artboard_Copy_3_2.png" alt="">
         <div class="name">
