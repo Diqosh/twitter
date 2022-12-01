@@ -22,6 +22,8 @@ if(validate($_POST["login"], $_POST["password"])){
 
     $_SESSION["user_id"] = $row["id"];
     $_SESSION["login"] = $row["login"];
+    $_SESSION["bio"] = $row["bio"];
+
 
     header("Location: ".BASE_URL."/index.php");
 
